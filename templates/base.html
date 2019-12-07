@@ -7,8 +7,8 @@
         <title>{{name}}</title>    
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--link to bootstrap css -->
-        <link href="{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
-        <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+        <link href=".{{ url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href=".{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
         
     </head>
     
@@ -21,8 +21,7 @@
                     <h3 class "navbar-brand mb-0"> {{name}}</h3>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{{ url_for("index") }}">Projects</a></li>
-                    
+                    <li class="active"><a href="{{ url_for("index") }}">Dayton Dynamic Languages</a></li>
                 </ul>                        
             </div>
         </nav>

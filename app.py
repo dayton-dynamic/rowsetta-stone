@@ -8,8 +8,6 @@ DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = ['.html', '.md']
 FLATPAGES_ROOT = 'content'
-POST_DIR = 'posts'
-PROJECTS_DIR = 'projects'
 FREEZER_DESTINATION = "rowsetta"
 FREEZER_DESTINATION_IGNORE = ['.git*', 'CNAME*'] # keep the repository files.
 
@@ -21,9 +19,7 @@ freezer = Freezer(app)
 #Homepage
 @app.route('/')
 def index():
-    posts = [p for p in flatpages if p.path.startswith(POST_DIR)]
-    projects = [project for project in flatpages if project.path.startswith(PROJECTS_DIR)]
-    return render_template('index.html', posts=posts, projects=projects)
+    return render_template('index.html', )
 
 
 if __name__ == '__main__':
