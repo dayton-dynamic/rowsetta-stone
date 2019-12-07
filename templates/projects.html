@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h1>Projects</h1>
+{% for project in projects %}
+
+<ul>
+<li>
+        <a href="{{ url_for("project", name=project.path.replace('projects/', '')) }}">{{ project.title }}</a>
+</li>
+</ul>
+{% endfor %}
+{% endblock content %}
+

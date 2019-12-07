@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+{% if post  %}
+<h2>{{ post.title }}</h2>
+    {{ post.html|safe }}
+    {% elif project  %}
+
+<h2>{{ project.title }}</h2>
+{{ project.html|safe }}
+{% else  %}
+<h1>Sorry, page doesn't exist</h1>
+    {% endif  %}
+    {% endblock content %}
+
