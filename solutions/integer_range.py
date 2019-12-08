@@ -1,1 +1,2 @@
-print(list(range(3)))
+arr = list(range(3))
+print(arr)
