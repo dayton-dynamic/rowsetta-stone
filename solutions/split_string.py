@@ -1,0 +1,1 @@
+"rowsetta stone".split()

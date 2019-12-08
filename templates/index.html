@@ -9,18 +9,25 @@
     <caption>Solutions by language</caption>
     <tr>
         <th scope="col"></th>
-        <th scope="col">lang 1</th>
+        {% for lang in languages %}
+        <th scope="col">
+            {{ lang }}
+        </th>
+        {% endfor %}
     </tr>
 
+    {% for (soln_name, soln_dict) in solutions.items() %}
     <tr>
-        <th scope="row">loop over integers</th>
+        <th scope="row">{{ soln_name.replace('_', ' ') }}</th>
+        {% for lang in languages %}
         <td>
             <code>
-for i in range(4):
-    print(i)
+{{ soln_dict[lang] }}
             </code>
         </td>
+        {% endfor %}
     </tr>
+    {% endfor %}
 </table>
 
 {% endblock content %}
