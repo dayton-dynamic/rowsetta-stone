@@ -1,0 +1,175 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <title></title>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link to bootstrap css -->
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/css/style.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <!--navbar -->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <h3 class "navbar-brand mb-0"> </h3>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="https://github.com/dayton-dynamic/rowsetta-stone">Project</a></li>
+                    <li class="active"><a href="/">Dayton Dynamic Languages</a></li>
+                </ul>                        
+            </div>
+        </nav>
+        <div class="container">
+<!--content goes here-->            
+
+            
+
+<h1>Rowsetta: Programming language comparison</h1>
+
+<table>
+    <caption>Solutions by language</caption>
+    <tr>
+        <th scope="col"></th>
+        
+        <th scope="col">
+            .result
+        </th>
+        
+        <th scope="col">
+            .js
+        </th>
+        
+        <th scope="col">
+            .py
+        </th>
+        
+        <th scope="col">
+            .rs
+        </th>
+        
+    </tr>
+
+    
+    <tr>
+        <th scope="row">split string</th>
+        
+        <td>
+            <code>
+
+            </code>
+        </td>
+        
+        <td>
+            <code>
+
+            </code>
+        </td>
+        
+        <td>
+            <code>
+&#34;rowsetta stone&#34;.split()
+
+            </code>
+        </td>
+        
+        <td>
+            <code>
+
+            </code>
+        </td>
+        
+    </tr>
+    
+    <tr>
+        <th scope="row">loop over array</th>
+        
+        <td>
+            <code>
+a
+b
+c
+
+            </code>
+        </td>
+        
+        <td>
+            <code>
+for (const c of [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]) {
+    console.log(c);
+}
+
+            </code>
+        </td>
+        
+        <td>
+            <code>
+for c in [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]:
+    print(c)
+
+            </code>
+        </td>
+        
+        <td>
+            <code>
+fn main() {
+    for c in [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;].iter() {
+        println!(&#34;{}&#34;, c)
+    }
+}
+
+            </code>
+        </td>
+        
+    </tr>
+    
+    <tr>
+        <th scope="row">integer range</th>
+        
+        <td>
+            <code>
+[0, 1, 2]
+
+            </code>
+        </td>
+        
+        <td>
+            <code>
+
+            </code>
+        </td>
+        
+        <td>
+            <code>
+print(list(range(3)))
+            </code>
+        </td>
+        
+        <td>
+            <code>
+
+            </code>
+        </td>
+        
+    </tr>
+    
+</table>
+
+
+
+<!--footer -->
+            <footer class="footer">
+                <div class="text-center">
+                    <span class="text-muted">Based on <a href="https://github.com/nkicg6/cookiecutter-static-flask">cookie-cutter-static-flask</a> by Nicholas George</span>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
